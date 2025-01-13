@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text To Speake </title>
+</head>
+<body>
+
+<input type="text" name="" id="abc">
+<input type="submit" onclick="myfunc()" value="Play">
+<audio controls="" autoplay="" hidden=""></audio>
+
+
+	<script type="text/javascript">
+	function myfunc() {
+
+var a = document.getElementById('abc').value;
+var source="https://translate.google.com/translate_tts?ie=UTF-8&tl=en-US&client=tw-ob&q="+a;
+document.getElementsByTagName('audio')[0].setAttribute("src",source);
+
+}
+	</script>
+</body>
+</html>

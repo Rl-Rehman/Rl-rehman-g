@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Geolocation API</title>
+</head>
+<body>
+   
+    <h1>HTML Geolocation</h1>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <p>Click the button to know both your latitudes and longitude</p>
+    <p> <button type="button" onclick="getLocation()">Click The Link</button> </p>
+    <p id="Samples"></p>
+
+    <script>
+       var y = document.getElementById("Samples");
+       function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+       } else {
+            y.innerHTML = "Your Broeser Does Not Support geoloction API.";
+       }
+    }
+    function showPosition(position) {
+            y.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Geolocation API</title>
+</head>
+<body>
+    <h1>HTML Geolocation</h1>
+    <p>Click the button to know both your latitude and longitude</p>
+    <p><button type="button" onclick="getLocation()">Click The Link</button></p>
+    <p id="Samples"></p>
+
+    <script>
+       var y = document.getElementById("Samples");
+       function getLocation() {
+           if (navigator.geolocation) {
+               navigator.geolocation.getCurrentPosition(showPosition);
+           } else {
+               y.innerHTML = "Your Browser Does Not Support Geolocation API.";
+           }
+       }
+
+       function showPosition(position) {
+           y.innerHTML = "Latitude: " + position.coords.latitude +
+               "<br>Longitude: " + position.coords.longitude;
+       }
+    </script>
+</body>
+</html>

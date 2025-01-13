@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Function Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+  // Event handler for the "Add Button" click event
+  $("#add-button").click(function() {
+
+    // Create a new button element
+    var newButton = $("<button>")
+      .addClass("btn btn-secondary dynamic-button")
+      .text("Dynamic Button");
+
+    // Append the new button to the button container
+    $("#button-container").append(newButton);
+  });
+
+  // Event handler for dynamically added buttons using the live() function
+  $(".dynamic-button").live("click", function() {
+
+    // Handle the click event for dynamically added buttons
+    alert("Dynamic button clicked!");
+  });
+});
+
+</script>
+
+<body>
+  <div class="container">
+    <button class="btn btn-danger" id="add-button">Add Button</button>
+
+    <div id="button-container">
+      
+    </div>
+  </div>
+  
+</body>
+</html>

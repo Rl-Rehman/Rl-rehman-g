@@ -1,0 +1,353 @@
+<!-- Char at -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var myString = "Hello, World!";
+    var index = 4;
+    var character = myString.charAt(index);
+    console.log("Character at index " + index + " is: " + character);
+  </script>
+
+</body>
+
+</html> -->
+
+
+<!-- Concat -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+    var array1 = [1, 2, 3];
+    var array2 = [4, 5, 6];
+    var Array = array1.concat(array2);
+    document.write(Array);
+
+
+    var string1 = "Hello, ";
+    var string2 = "World!";
+    var String = string1 + string2;
+    document.write(String);
+
+  </script>
+</body>
+
+</html> -->
+
+
+<!-- indexof
+ -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+    var myArray = [1, 2, 3, 4, 5];
+    var elementToFind = 3;
+    var index = myArray.indexOf(elementToFind);
+
+    if (index !== -1) {
+      document.write("Element found at index: " + index);
+    } else {
+      document.write("Element not found in the array");
+    }
+
+
+
+
+    var myString = "Hello, World!";
+    var substringToFind = "World";
+    var index = myString.indexOf(substringToFind);
+
+    if (index !== -1) {
+      document.write("Substring found at index: " + index);
+    } else {
+      document.write("Substring not found in the string");
+    }
+
+
+  </script>
+
+</body>
+
+</html> -->
+
+
+<!-- lengthof -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+    var myArray = [1, 2, 3, 4, 5];
+    var arrayLength = myArray.length;
+    document.write("Length of the array: " + arrayLength);
+
+    var myString = "Hello World";
+    var stringLength = myString.length;
+    document.write("Length of the string: " + stringLength);
+
+
+  </script>
+</body>
+
+</html> -->
+
+
+<!-- foreach -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+
+    var myArray = [1, 2, 3, 4, 5];
+    myArray.forEach(function (element, index, array) {
+      document.write("Element at index " + index + ": " + element);
+      document.write("Full array:", array);
+    });
+
+
+  </script>
+
+</body>
+
+</html>
+
+
+
+<!-- push -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+// var myArray = [1, 2, 3];
+// console.log(myArray);
+// myArray.push(4);
+// myArray.push(5, 6);
+// console.log(myArray);
+
+</script>
+
+</body>
+</html>  -->
+
+
+<!-- pop -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var ali = [1, 2, 3, 4, 5];
+console.log(ali);
+var lastElement = ali.pop();
+console.log("Last element removed:", lastElement);
+console.log("Array after pop:", ali);
+
+</script>
+
+</body>
+</html> -->
+
+
+<!-- substr -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var originalString = "Hello, World!";
+var startIndex = 7; // Starting index
+var length = 5;     // Length of the substring
+var substring = originalString.substr(startIndex, length);
+document.write("Substring:", substring); // Output: "World"
+
+</script>
+
+</body>
+</html>  -->
+
+<!-- reverse -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var originalString = "Hello, World!";
+var reversedString = originalString.split('').reverse().join('');
+console.log("Original string:", originalString);
+console.log("Reversed string:", reversedString);
+
+
+</script>
+
+</body>
+</html>  -->
+
+
+<!-- sort -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var fruits = ["apple", "banana", "cherry", "date"];
+fruits.sort();
+document.write("Sorted fruits:", fruits);
+
+
+var numbers = [5, 2, 8, 1, 9];
+numbers.sort(function(a,b) {
+return a - b;
+});
+console.log("Sorted numbers (ascending):", numbers);
+
+
+var numbers = [5, 2, 8, 1, 9];
+numbers.sort(function(c,d) {
+  return d-c;
+});
+console.log("Sorted numbers (descending):", numbers);
+
+
+
+</script>
+</body>
+</html> -->
+
+
+<!-- lower case -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var originalString = "HELLO, WORLD!";
+var lowercaseString = originalString.toLowerCase();
+document.write("Original string:", originalString);
+document.write("Lowercase string:", lowercaseString);
+
+</script>
+</body>
+</html> -->
+
+<!-- upper case -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var originalString = "hello world!";
+var uppercaseString = originalString.toUpperCase();
+console.log("Original string:", originalString);
+console.log("Uppercase string:", uppercaseString);
+
+</script>
+
+</body>
+</html> -->
+
+
+<!-- to string -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function toggleCase(inputString) {
+  var toggledString = "";
+  for (var i = 0; i < inputString.length; i++) {
+    var char = inputString.charAt(i);
+    if (char === char.toUpperCase()) {
+      toggledString += char.toLowerCase();
+    } else {
+      toggledString += char.toUpperCase();
+    }
+  }
+  return toggledString;
+}
+
+var originalString = "Hello, World!";
+var toggledString = toggleCase(originalString);
+
+console.log("Original string:", originalString);
+console.log("Toggled case string:", toggledString);
+
+</script>
+
+</body>
+</html> -->

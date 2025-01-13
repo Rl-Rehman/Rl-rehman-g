@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .input-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      /*border: none;*/
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text-to-Speech Example</h1>
+
+  <div class="container">
+    <div class="input-group">
+      <input type="text" id="inputText" placeholder="Enter text to convert">
+      <button onclick="speak()">Speak</button>
+    </div>
+  </div>
+
+  <script>
+    function speak() {
+      var inputText = document.getElementById("inputText").value;
+
+      // Check if the browser supports speech synthesis
+      if ('speechSynthesis' in window) {
+        var speech = new SpeechSynthesisUtterance();
+        speech.text = inputText;
+
+        // Speech synthesis settings (optional)
+        speech.lang = 'en-US'; // Set the language
+        speech.volume = 1; // Set the volume (0.0 to 1.0)
+        speech.rate = 1; // Set the speaking rate (0.1 to 10)
+        speech.pitch = 1; // Set the pitch (0 to 2)
+
+        // Speak the text
+        window.speechSynthesis.speak(speech);
+      } 
+      else {
+        alert('Speech synthesis is not supported in this browser.');
+      }
+    }
+  </script>
+</body>
+</html>

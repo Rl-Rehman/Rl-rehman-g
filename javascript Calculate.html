@@ -1,0 +1,196 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculater</title>
+    <style>
+
+.btn{
+         padding: 20px 40px;
+         color: white;
+         background-color: black;
+         font-size: 30px;
+         font-weight: bolder;
+         width: 100px;
+         border: 2px solid black;
+         border-radius: 50%;
+         border: none;
+         box-shadow: 8px 12px 5px gray;
+}
+
+#clear1 {
+    width: 160px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+.blankfield{
+         width: 260px;
+         padding: 20px;
+         font-size: 40px;
+         font-weight: bolder;
+         border: 2px solid black;
+         border-radius: 6px;
+         border: none;
+         box-shadow: 8px 12px 5px gray; 
+        }
+
+        #just{
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn:hover{
+            background-color: green;
+        }
+
+        .btn:active{
+            transform: translateY(12px);
+            box-shadow: 0px 3px 7px red;
+            background-color: brown;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="just">
+       <form name="point">
+        <input type="text" name="A" id="bliankfield">
+        <br><br>
+
+        <input type="button" value="9" class="btn" onclick="point.A.value += '9'">
+        <input type="button" value="8" class="btn" onclick="point.A.value += '8'">
+        <input type="button" value="7" class="btn" onclick="point.A.value += '7'">
+        <br><br>
+
+        <input type="button" value="6" class="btn" onclick="point.A.value += '6'"> 
+        <input type="button" value="5" class="btn" onclick="point.A.value += '5'">
+        <input type="button" value="4" class="btn" onclick="point.A.value += '4'">
+        <br><br>
+
+        <input type="button" value="3" class="btn" onclick="point.A.value += '3'"> 
+        <input type="button" value="2" class="btn" onclick="point.A.value += '2'">
+        <input type="button" value="1" class="btn" onclick="point.A.value += '1'">
+        <br><br>
+
+        <input type="button" value="*" class="btn" onclick="point.A.value += '*'"> 
+        <input type="button" value="/" class="btn" onclick="point.A.value += '/'">
+        <input type="button" value="+" class="btn" onclick="point.A.value += '+'">
+        <br><br>
+
+        <input type="button" value="-" class="btn" onclick="point.A.value += '-'"> 
+        <input type="button" value="." class="btn" onclick="point.A.value += '.'">
+        <input type="button" value="=" class="btn" onclick="point.A.value = eval (point.A.value)">
+        <br><br>
+
+        <input type="button" value="0" class="btn" onclick="point.A.value += '0'"> 
+
+        <input type="button" value="clear" class="btn" id="clear1" onclick="point.A.value = ''"> 
+  
+       </form>
+      </div>  
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <style>
+        .btn {
+            padding: 20px 40px;
+            color: white;
+            background-color: black;
+            font-size: 30px;
+            font-weight: bolder;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 8px 12px 5px gray;
+        }
+
+        #clear1 {
+            width: 160px;
+            margin-left: 30px;
+            margin-bottom: 100px;
+        }
+
+        .blankfield {
+            width: 260px;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            border: 2px solid black;
+            border-radius: 6px;
+            border: none;
+            box-shadow: 8px 12px 5px gray;
+        }
+
+        #just {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            background-color: green;
+        }
+
+        .btn:active {
+            transform: translateY(12px);
+            box-shadow: 0px 3px 7px red;
+            background-color: brown;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="just">
+        <form name="point">
+            <input type="text" name="A" class="blankfield" id="blankfield">
+            <br><br>
+
+            <input type="button" value="9" class="btn" onclick="point.A.value += '9'">
+            <input type="button" value="8" class="btn" onclick="point.A.value += '8'">
+            <input type="button" value="7" class="btn" onclick="point.A.value += '7'">
+            <br><br>
+
+            <input type="button" value="6" class="btn" onclick="point.A.value += '6'">
+            <input type="button" value="5" class="btn" onclick="point.A.value += '5'">
+            <input type="button" value="4" class="btn" onclick="point.A.value += '4'">
+            <br><br>
+
+            <input type="button" value="3" class="btn" onclick="point.A.value += '3'">
+            <input type="button" value="2" class="btn" onclick="point.A.value += '2'">
+            <input type="button" value="1" class="btn" onclick="point.A.value += '1'">
+            <br><br>
+
+            <input type="button" value="*" class="btn" onclick="point.A.value += '*'">
+            <input type="button" value="/" class="btn" onclick="point.A.value += '/'">
+            <input type="button" value="+" class="btn" onclick="point.A.value += '+'">
+            <br><br>
+
+            <input type="button" value="-" class="btn" onclick="point.A.value += '-'">
+            <input type="button" value="." class="btn" onclick="point.A.value += '.'">
+            <input type="button" value="=" class="btn" onclick="calculate()">
+            <br><br>
+
+            <input type="button" value="0" class="btn" onclick="point.A.value += '0'">
+            <input type="button" value="clear" class="btn" id="clear1" onclick="point.A.value = ''">
+        </form>
+    </div>
+
+    <script>
+        function calculate() {
+            try {
+                point.A.value = eval(point.A.value);  // Using eval here, but consider alternatives
+            } catch (e) {
+                point.A.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
